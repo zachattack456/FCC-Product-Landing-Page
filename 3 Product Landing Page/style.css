@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-image: url(https://i.ibb.co/2y8GcWd/middle-earth-mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header Styles */
+header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(https://i.redd.it/27fdrvqshi931.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom:#005500 3px solid;
+}
+
+header #header-img {
+    display: inline-block;
+    height: 7vh;
+    width: auto;
+    margin: auto 0 auto 0;
+    padding: 0 0 0 1vw;
+}
+
+/* Navigation bar */
+header nav{
+    width: 30vw;
+    padding: 0;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    display: block;
+    padding: 0;
+    height: 100%;
+    width: 100%;    
+    background-color: #35424A;
+    text-align: center;    
+}
+  
+header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+header a:hover{
+    color:#006600;
+    font-weight:bold;
+  }
+
+/* Article */
+article {
+    margin-top: 15vh;
+}
+
+#video-div {
+    text-align: center;
+    height: 80vh;
+}
+
+/* About section */
+#about {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    width: 80vw;
+    margin: 10vh auto 10px auto;
+    border: 1px darkgray solid;
+    border-radius: 10px;
+}
+
+/* Guides */
+#guide-choices {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+}
+
+#aragorn, #bilbo, #gandalf {
+    background-color: #f4f4f4;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    font-size: 1.2em;
+    width: 40vw;
+    margin: 1vw;
+    border: 1px darkgray solid;
+    border-radius: 10px;
+}
+
+#guides-title {
+    background-color: #f4f4f4;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    font-size: 1.2em;
+    width: 40%;
+    margin: auto;
+    border: 1px darkgray solid;
+    border-radius: 10px;
+}
+
+/* Map */
+#map {
+    text-align: center;
+    margin: 10px auto 10px auto;
+    width: 80%;
+    height: auto;
+}
+
+#map img{
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+/* Form styles */
+form {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    width: 40%;
+    margin: auto;
+    border: 1px darkgray solid;
+    border-radius: 10px;
+}
+
+#email {
+    height: 25px;
+    width: 80%;
+    max-width: 300px;
+}
+
+#submit-btn {
+    padding: 10px 20px 10px 20px;
+    margin-top: 1vh;
+    background-color: #006600;
+    border-radius: 5px;
+    border: 2px #005500 solid;
+    font-size: 16px;
+}
+
+#submit-btn:hover {
+    background-color: #499A39;
+}
+
+/* Footer */
+footer {
+    bottom: 0;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: #35424A;
+    text-align: center;
+    font-size: 1.5em;
+    color: #f4f4f4;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+/* Phone Styles */
+@media (max-width: 600px) {
+    * {
+        font-size: .9rem;
+    }
+
+    header nav{
+        width: 50vw;
+        font-size: .5em;
+        padding: 0;
+    }
+
+    header nav ul li a{
+        font-size: .9em;
+    }
+}
