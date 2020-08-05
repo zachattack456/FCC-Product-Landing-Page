@@ -8,12 +8,12 @@
 </head>
 <body>
     <header id="header">
-        <img src=".\img\ehrhardt_inc.png" id="header-img" alt="Ehrhardt Inc Logo">
         <nav id="nav-bar">
-             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#guides">Guides</a></li>
-                <li><a href="#map">Map</a></li>
+             <ul id="nav-list">
+                <li class="list-item"><img src=".\img\ehrhardt_inc.png" id="header-img"  alt="Ehrhardt Inc Logo"></li>
+                <li class="list-item"><a href="#about-anchor">About</a></li>
+                <li class="list-item"><a href="#guides-anchor" >Guides</a></li>
+                <li class="list-item"><a href="#map-anchor" >Map</a></li>
             </ul> 
         </nav>
     </header>
@@ -24,8 +24,8 @@
                 <iframe style="width:80vw;height:80vh;" src="https://www.youtube.com/embed/KD8TGZBmc2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <section id="about">
-                <div>Come journey through wonderful and scenic middle earth with your choice of three excellent guides! See sights such as:
+            <div id="about-anchor" class="anchor"></div>
+            <section id="about" class="text-box">Come journey through wonderful and scenic middle earth with your choice of three excellent guides! See sights such as:
                     <ul>
                         <li>The Brandywine Bridge</li>
                         <li>Bree</li>
@@ -35,14 +35,14 @@
                         <li>Isengard</li>
                         <li>And many many more!</li>
                     </ul>
-                </div>
             </section>
+            <div id="guides-anchor" class="anchor"></div>
             <section id="guides">
-                <div id="guides-title">
+                <div id="guides-title" class="text-box">
                     <h1>Choose from our three wonderful guides:</h1>
                 </div>
                 <div id="guide-choices">
-                    <div id="aragorn" class="guides">
+                    <div id="aragorn" class="guides text-box">
                         <h2>Aragorn, Son of Arathorn (Aka Strider):</h2>
                         <h3>$300</h3>                        
                         <p>Once a ranger of the northlands
@@ -50,7 +50,7 @@
                         Weilder of Anduril, sword of kings
                         Excellent in combat</p>                        
                     </div>
-                    <div id="bilbo" class="guides">
+                    <div id="bilbo" class="guides text-box">
                         <h2>Bilbo Baggins, Master Theif:</h2>
                         <h3>$500</h3>                        
                         <p>Related to The Old Took<br>
@@ -58,7 +58,7 @@
                         Weilder of Sting<br>
                         Excellent in stealth<br></p>         
                     </div>
-                    <div id="gandalf" class="guides">
+                    <div id="gandalf" class="guides text-box">
                         <h2>Gandalf the White, of the Istari:</h2>
                         <h3>$1000</h3>
                         <p>Currently the head of the Istari Counsel<br>
@@ -69,10 +69,11 @@
                 </div>
             </section>
 
+            <div id="map-anchor" class="anchor"></div>
             <section id="map">
                 <img src="https://preview.redd.it/7obbt07xosl01.jpg?width=960&crop=smart&auto=webp&s=fd942975971b207dc82d8f4f14b25a89fa213179" alt="Map of Middle Earth"></img>
             </section>
-            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="text-box">
                 <label for="email">Want to know more? Enter email:</label><br>
                 <input type="email" id="email" placeholder="Enter your email">
                 <input type="submit" id="submit-btn" value="Submit">
